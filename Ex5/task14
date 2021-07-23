@@ -1,0 +1,14 @@
+text = input("Enter your text: ")
+resultU = 0
+resultL =0
+resultS =0
+for c in text:
+    if c.isupper():
+        resultU +=1
+    elif c.islower():
+        resultL +=1
+    else:
+        resultS +=1
+print("Uppercase character number is {}".format(resultU))
+print("Lowercase character number is {}".format(resultL))
+print("Special character number is {}".format(resultS))

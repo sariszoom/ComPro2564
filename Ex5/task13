@@ -1,0 +1,24 @@
+username = "admin"
+password = "1234"
+while True:
+    while True:
+        inUName = input("Enter username: ")
+        inPass = input("Enter password:")
+        if inUName != username and inPass == password:
+            print("Username wrong!!!")
+        elif inUName == username and inPass != password:
+            print("Password wrong!!!")
+        elif inUName == username and inPass == password:
+            print("Login")
+            break
+        else:
+            print("Username and password wrong!!!")
+
+    setUp = input("Do you want to set up new username and password? (yes/no)").lower()
+    if setUp == "no":
+        break
+    elif setUp == "yes":
+        nUName = input("Enter your new username: ")
+        nPass = input("Enter your new password: ")
+        username = nUName
+        password = nPass

@@ -1,0 +1,15 @@
+sampleDict = [{"V":"S001"}, 
+              {"V": "S002"}, 
+              {"VI": "S001"}, 
+              {"VI": "S005"},
+              {"VII":"S005"}, 
+              {"V":"S009"},
+              {"VIII":"S007"}
+             ]
+newDict = set()
+for i in range(len(sampleDict)):
+    x = sampleDict[i]
+    for j in x:
+        if x[j] not in newDict:
+            newDict.add(x[j])
+print(newDict)

@@ -1,0 +1,5 @@
+Str = 'w3resource'
+Dict = {}
+for i in Str:
+    Dict[i] = Str.count(i)
+print(Dict)
